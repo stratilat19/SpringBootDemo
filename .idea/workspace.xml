@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9e866a-700b-4399-a6a0-f23a26f7730a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/learnSpring/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/learnSpring/controllers/MvcController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -264,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539895235018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539898538573" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -338,6 +330,15 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
