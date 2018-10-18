@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты - SpringMvcDemo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    <aside class="left">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                <li>
+                    <a href="/hello">Приветствие</a>
+                </li>
+                <li class="inactive">
+                    <a href="/contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
+        <main>
+            <p th:text="'Операционная система ' + ${os}" />
+        </main>
+    </section>
+    <footer>Copyright (c) 2018</footer>
+
+</body>
+</html>
