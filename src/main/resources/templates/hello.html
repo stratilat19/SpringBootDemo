@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>Приветствие - SpringMvcDemo</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Приветствие</h1>
+        </header>
+        <aside class="left">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="inactive">
+                        <a href="/hello">Приветствие</a>
+                    </li>
+                    <li>
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+
+            <main>
+                <p th:text="'Hello, ' + ${name} + ' ' + ${lastName} + '!'"/>
+
+
+
+            </main>
+        </section>
+        <footer>Copyright (c) 2018</footer>
+
+    </body>
+</html>
