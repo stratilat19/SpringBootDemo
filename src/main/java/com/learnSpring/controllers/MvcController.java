@@ -29,7 +29,7 @@ public class MvcController {
     public String feedback(@RequestParam String name,
                            @RequestParam String email,
                            Model model){
-        System.out.println("FEEDBACK name = "+name+" email = "+email);
+        System.out.println("FEEDBACK name = "+name+" email = " + email);
         return "contacts";
     }
 
