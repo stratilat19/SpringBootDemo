@@ -25,7 +25,7 @@ public class MvcController {
         return "contacts";
     }
 
-    @PostMapping
+    @PostMapping("/contacts")
     public String feedback(@RequestParam String name,
                            @RequestParam String email,
                            Model model){
