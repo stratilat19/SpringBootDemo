@@ -46,7 +46,21 @@ ul li.inactive a {
 
 ul li.inactive {
     background-color: #ccc;
+}
 
+main.contacts {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    color: lightgreen;
+    background-color: #25756e;
+    margin: 0px;
+}
+
+h4 {
+    text-align: center;
 }
 
 body {
