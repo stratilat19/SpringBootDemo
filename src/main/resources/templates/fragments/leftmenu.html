@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <aside th:fragment="copy (mainClass, helloClass, contactClass)" class="left">
+            <nav>
+                <ul>
+                    <li th:classappend="${mainClass}">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li th:classappend="${helloClass}">
+                        <a href="/hello">Приветствие</a>
+                    </li>
+                    <li th:classappend="${contactClass}">
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </body>
+</html>

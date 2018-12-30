@@ -1,34 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <title>Приветствие - SpringMvcDemo</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+    <div th:replace="fragments/head :: copy('Приветствие - SpringMvcDemo')"></div>
     <body>
-        <header>
-            <h1>Приветствие</h1>
-        </header>
-        <aside class="left">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/">Главная</a>
-                    </li>
-                    <li class="inactive">
-                        <a href="/hello">Приветствие</a>
-                    </li>
-                    <li>
-                        <a href="/contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        <div th:replace="fragments/header :: copy('Приветствие')"></div>
+        <div th:replace="fragments/leftmenu :: copy(mainClass='', helloClass='inactive', contactClass='')"></div>
         <section>
             <main>
                 <p th:text="'Hello, ' + ${name} + ' ' + ${lastName} + '!'"/>
             </main>
         </section>
-        <footer>Copyright (c) 2018</footer>
+        <div th:replace="fragments/footer :: copy"></div>
     </body>
 </html>

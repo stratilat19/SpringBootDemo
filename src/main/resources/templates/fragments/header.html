@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <div th:fragment="copy (header)">
+        <aside class="left">
+            <a href="/"><img src="img/logo.png" width="48" height="48"></a>
+        </aside>
+        <aside class="right">
+            <iframe src="http://free.timeanddate.com/clock/i6g85dr3/n316/szw60/szh60/hoc000/hbw0/hfceee/cf100/hncccc/fdi76/mqv0/mhv0/mmc000/mml10/mmw1/mmd98" frameborder="0" width="60" height="60"></iframe>
+        </aside>
+        <header>
+            <h1 th:text="${header}" class="demo"></h1>
+        </header>
+    </div>
+    </body>
+</html>

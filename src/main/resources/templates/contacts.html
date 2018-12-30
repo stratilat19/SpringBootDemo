@@ -1,39 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Контакты - SpringMvcDemo</title>
-        <link rel="stylesheet" href="css/styles.css"/>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    </head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <div th:replace="fragments/head :: copy('Контакты')"></div>
     <body>
-        <aside class="left">
-            <a href="/"><img src="img/logo.png" width="48" height="48"></a>
-        </aside>
-        <header>
-            <h1>Контакты</h1>
-        </header>
+        <div th:replace="fragments/header :: copy('Контакты')"></div>
         <section>
-            <aside class="left">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/">Главная</a>
-                        </li>
-                        <li>
-                            <a href="/hello">Приветствие</a>
-                        </li>
-                        <li class="inactive">
-                            <a href="/contacts">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
+            <div th:replace="fragments/leftmenu :: copy(mainClass='', helloClass='', contactClass='inactive')"></div>
             <main class="contacts">
                 <div class="container">
                     <h4>Задайте нам вопрос</h4>
@@ -85,6 +56,6 @@
                 </div>
             </main>
         </section>
-        <footer>Copyright (c) 2018</footer>
+        <div th:replace="fragments/footer :: copy"></div>
     </body>
 </html>

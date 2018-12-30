@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <div th:replace="fragments/head :: copy('Главная - SpringMvcDemo')"></div>
+    <body>
+        <div th:replace="fragments/header :: copy('Проект SpringMvcDemo')"></div>
+        <div th:replace="fragments/leftmenu :: copy(mainClass='inactive', helloClass='', contactClass='')"></div>
+        <section>
+            <div class="site_desc">
+                <h2>Описание проекта</h2>
+                <p>Демонстрация некоторых технологий</p>
+            </div>
+            <main>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/6BQtWJ3sBac"></iframe>
+            </main>
+        </section>
+        <p>Дальнейшие подробности</p>
+        <div th:replace="fragments/footer :: copy"></div>
+    </body>
+</html>
